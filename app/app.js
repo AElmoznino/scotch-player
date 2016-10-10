@@ -12,6 +12,12 @@ import Details from './components/details.component';
 //Import the Player component
 import Player from './components/player.component';
 
+//Import the Progress Component
+import Progress from './components/progress.component';
+
+//Import the Footer Component
+import Footer from './components/footer.component';
+
 // Component class
 class App extends React.Component {
 
@@ -22,6 +28,11 @@ class App extends React.Component {
 				<Search />
 				<Details title={'Track title'} />
 				<Player />
+				<Progress
+					position={'0.3'}
+					elapsed={'00:00'}
+					total={'0:40'}/>
+				<Footer />
 			</div>
 		);
 	}
